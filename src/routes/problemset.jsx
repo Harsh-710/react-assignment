@@ -1,59 +1,7 @@
 import { Link } from "react-router-dom";
-import { nanoid } from 'nanoid'
 
-/*
- * Temporary problems array schema
- */
-const problems = [
-    {
-      id: nanoid(),
-      title: "201. Bitwise AND of Numbers Range",
-      difficulty: "Medium",
-      acceptance: "42%",
-    },
-    {
-      id: nanoid(),
-      title: "202. Happy Number",
-      difficulty: "Easy",
-      acceptance: "54.9%",
-    },
-    {
-      id: nanoid(),
-      title: "201. Bitwise AND of Numbers Range",
-      difficulty: "Medium",
-      acceptance: "41.2%",
-    },
-    {
-      id: nanoid(),
-      title: "203. Remove Linked List Elements",
-      difficulty: "Hard",
-      acceptance: "42%",
-    },
-    {
-      id: nanoid(),
-      title: "201. Bitwise AND of Numbers Range",
-      difficulty: "Medium",
-      acceptance: "41.2%",
-    },
-    {
-      id: nanoid(),
-      title: "203. Remove Linked List Elements",
-      difficulty: "Hard",
-      acceptance: "42%",
-    },
-    {
-      id: nanoid(),
-      title: "202. Happy Number",
-      difficulty: "Easy",
-      acceptance: "54.9%",
-    },
-    {
-      id: nanoid(),
-      title: "201. Bitwise AND of Numbers Range",
-      difficulty: "Medium",
-      acceptance: "41.2%",
-    },
-  ];
+import problemData from "./problems.json";
+const problems = problemData.PROBLEMS;
 
 function ProblemSet() {
     const problemStatements = problems.map(problem => {
